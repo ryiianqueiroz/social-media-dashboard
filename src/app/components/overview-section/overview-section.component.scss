@@ -1,0 +1,52 @@
+section{
+    h2{
+        max-width: 1000px;
+        margin: auto;
+        font-size: 19px;
+        margin-bottom: 20px;
+        color: rgb(128, 126, 126);
+        margin-top: 20px;
+    }
+
+    .section-blocos{
+        display: grid;
+        margin: auto;
+        max-width: 1000px;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 17px;
+
+        .section-bloco{
+            background-color:rgba(236, 236, 236, 0.671);
+            height: 110px;
+            display: flex;
+            flex-direction: column;
+
+            .bloco-img{
+                margin-right: 20px;
+                margin-left: 20px;
+                width: 80%;
+                justify-content: space-between;
+                align-items: center;
+                display: flex;
+
+                img{
+                    width: 20px;
+                    height: 20px;
+                }
+            }
+
+            .bloco-numbers{
+                margin-right: 20px;
+                margin-left: 20px;
+                justify-content: space-between;
+                align-items: center;
+                display: flex;
+
+                img{
+                    width: 9px;
+                    height: 9px;
+                }
+            }
+        }
+    }
+}

@@ -1,3 +1,76 @@
+main {
+  display: grid;
+  margin: auto;
+  max-width: 1000px;
+  gap: 17px;
+  grid-template-columns: repeat(4, 1fr);
+}
 
+.stats-bloco {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(236, 236, 236, 0.671);
+  height: 200px;
+}
+.stats-bloco h1 {
+  font-size: 50px;
+  margin: 0;
+}
+.stats-bloco #p-followers {
+  margin-top: 5px;
+  color: rgb(150, 150, 150);
+  letter-spacing: 4px;
+  font-size: 13px;
+}
+.stats-bloco img {
+  width: 20px;
+  height: 20px;
+}
+.stats-bloco .img-link {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-top: 15px;
+}
+.stats-bloco .img-link p {
+  font-size: 12px;
+}
+.stats-bloco .today, .stats-bloco .today-red {
+  display: flex;
+  align-items: center;
+  font-size: 11px;
+  gap: 5px;
+  color: rgb(6, 151, 72);
+  font-weight: 700;
+}
+.stats-bloco .today img, .stats-bloco .today-red img {
+  width: 8px;
+  height: 8px;
+}
+.stats-bloco .today-red {
+  color: red;
+}
+.stats-bloco:nth-child(1) {
+  border-top: 3px solid rgba(0, 119, 255, 0.753);
+}
+.stats-bloco:nth-child(2) {
+  border-top: 3px solid rgba(0, 153, 255, 0.87);
+}
+.stats-bloco:nth-child(3) {
+  border-top: 3px solid;
+  border-image: linear-gradient(to right, #fdc468, #df4996);
+  border-image-slice: 1;
+}
+.stats-bloco:nth-child(4) {
+  border-top: 3px solid red;
+}
+
+@media screen and (max-width: 768px) {
+  main {
+    display: flex;
+    flex-direction: column;
+  }
+}
 
 /*# sourceMappingURL=main-overall.css.map */
