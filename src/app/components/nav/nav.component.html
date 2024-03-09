@@ -1,11 +1,11 @@
 <nav>
     <div class="media-nav">
         <h3>Social Media Dashboard</h3>
-        <p>Total Followers: 23,004</p>
+        <p [ngClass]="{'p-total-followers': app.darkMode}">Total Followers: 23,004</p>
     </div>
 
     <div class="dark-mode">
-        <h3>Dark Mode</h3>
+        <h3 [ngClass]="{'h3-dark-mode': app.darkMode}">Dark Mode</h3>
         <input type="checkbox" id="switch" />
         <label for="switch">Toggle</label>
     </div>

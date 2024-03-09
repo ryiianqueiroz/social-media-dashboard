@@ -20,6 +20,11 @@ section{
             height: 110px;
             display: flex;
             flex-direction: column;
+            cursor: pointer;
+
+            &:hover{
+                background-color: rgba(214, 214, 214, 0.671);
+            }
 
             .bloco-img{
                 margin-right: 20px;
@@ -28,6 +33,11 @@ section{
                 justify-content: space-between;
                 align-items: center;
                 display: flex;
+                margin-top: 5px;
+
+                p{
+                    font-size: 14px;
+                }
 
                 img{
                     width: 20px;
@@ -41,12 +51,43 @@ section{
                 justify-content: space-between;
                 align-items: center;
                 display: flex;
+                margin-top: -10px;
+
+                h3{
+                    font-size: 26px;
+                }
 
                 img{
                     width: 9px;
                     height: 9px;
                 }
+
+                p{
+                    font-size: 12px;
+                }
+
+                .p-green{
+                    color: rgb(6, 151, 72);
+                }
+
+                .p-red{
+                    color: red;
+                }
             }
         }
+    }
+}
+
+// dark-mode
+
+.h2-overview{
+    color: white !important;
+}
+
+.section-bloco-dark{
+    background-color: hsl(228, 28%, 20%) !important;
+
+    &:hover{
+        background-color: hsl(228, 28%, 14%) !important;
     }
 }

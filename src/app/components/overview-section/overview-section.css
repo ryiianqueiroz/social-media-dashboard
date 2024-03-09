@@ -18,6 +18,10 @@ section .section-blocos .section-bloco {
   height: 110px;
   display: flex;
   flex-direction: column;
+  cursor: pointer;
+}
+section .section-blocos .section-bloco:hover {
+  background-color: rgba(214, 214, 214, 0.671);
 }
 section .section-blocos .section-bloco .bloco-img {
   margin-right: 20px;
@@ -26,6 +30,10 @@ section .section-blocos .section-bloco .bloco-img {
   justify-content: space-between;
   align-items: center;
   display: flex;
+  margin-top: 5px;
+}
+section .section-blocos .section-bloco .bloco-img p {
+  font-size: 14px;
 }
 section .section-blocos .section-bloco .bloco-img img {
   width: 20px;
@@ -37,10 +45,34 @@ section .section-blocos .section-bloco .bloco-numbers {
   justify-content: space-between;
   align-items: center;
   display: flex;
+  margin-top: -10px;
+}
+section .section-blocos .section-bloco .bloco-numbers h3 {
+  font-size: 26px;
 }
 section .section-blocos .section-bloco .bloco-numbers img {
   width: 9px;
   height: 9px;
+}
+section .section-blocos .section-bloco .bloco-numbers p {
+  font-size: 12px;
+}
+section .section-blocos .section-bloco .bloco-numbers .p-green {
+  color: rgb(6, 151, 72);
+}
+section .section-blocos .section-bloco .bloco-numbers .p-red {
+  color: red;
+}
+
+.h2-overview {
+  color: white !important;
+}
+
+.section-bloco-dark {
+  background-color: hsl(228, 28%, 20%) !important;
+}
+.section-bloco-dark:hover {
+  background-color: hsl(228, 28%, 14%) !important;
 }
 
 /*# sourceMappingURL=overview-section.css.map */

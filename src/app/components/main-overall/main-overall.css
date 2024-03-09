@@ -12,6 +12,10 @@ main {
   align-items: center;
   background-color: rgba(236, 236, 236, 0.671);
   height: 200px;
+  cursor: pointer;
+}
+.stats-bloco:hover {
+  background-color: rgba(214, 214, 214, 0.671);
 }
 .stats-bloco h1 {
   font-size: 50px;
@@ -70,7 +74,14 @@ main {
   main {
     display: flex;
     flex-direction: column;
+    max-width: 90%;
   }
+}
+.stats-bloco-dark {
+  background-color: hsl(228, 28%, 20%);
+}
+.stats-bloco-dark:hover {
+  background-color: hsl(228, 28%, 14%);
 }
 
 /*# sourceMappingURL=main-overall.css.map */

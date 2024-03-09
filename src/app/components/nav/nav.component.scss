@@ -25,7 +25,9 @@ input[type=checkbox]{
   visibility: hidden;
 
   &:checked + label {
-    background: #bada55;
+    &:after{
+      background: white;
+    }
   }
 
   &:checked + label:after {
@@ -39,7 +41,7 @@ label {
   text-indent: -9999px;
   width: 45px;
   height: 26px;
-  background: grey;
+  background: linear-gradient(25deg, hsl(210, 78%, 56%),hsl(146, 68%, 55%));
   display: block;
   border-radius: 100px;
   position: relative;
@@ -51,7 +53,7 @@ label {
     left: 3px;
     width: 20px;
     height: 20px;
-    background: #fff;
+    background: black;   
     border-radius: 90px;
     transition: 0.3s;
   }
@@ -60,4 +62,14 @@ label {
     width: 20px;
   }
 
+}
+
+// dark mode 
+
+.p-total-followers{
+  color: hsl(228, 34%, 66%);
+}
+
+.h3-dark-mode{
+  color: white;
 }
