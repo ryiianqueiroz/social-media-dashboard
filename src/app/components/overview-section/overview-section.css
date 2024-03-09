@@ -75,4 +75,29 @@ section .section-blocos .section-bloco .bloco-numbers .p-red {
   background-color: hsl(228, 28%, 14%) !important;
 }
 
+@media screen and (max-width: 768px) {
+  section {
+    max-width: 90%;
+    margin: auto;
+    padding-bottom: 50px;
+  }
+  section .section-blocos {
+    display: grid;
+    margin: auto;
+    grid-template-columns: 1fr;
+    gap: 17px;
+  }
+  section .section-blocos .section-bloco {
+    position: relative;
+  }
+  section .section-blocos .section-bloco .bloco-img {
+    max-width: 100%;
+  }
+  section .section-blocos .section-bloco .bloco-img img {
+    right: 0;
+    margin-right: 20px;
+    position: absolute;
+  }
+}
+
 /*# sourceMappingURL=overview-section.css.map */

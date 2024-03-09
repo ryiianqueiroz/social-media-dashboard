@@ -12,4 +12,8 @@ import { AppComponent } from '../../app.component';
 export class NavComponent {
   
   constructor (public app: AppComponent) {}
+
+  changeMode(): any {
+    this.app.darkMode = !this.app.darkMode
+  }
 }

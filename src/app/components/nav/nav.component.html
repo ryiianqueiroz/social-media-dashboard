@@ -6,7 +6,7 @@
 
     <div class="dark-mode">
         <h3 [ngClass]="{'h3-dark-mode': app.darkMode}">Dark Mode</h3>
-        <input type="checkbox" id="switch" />
+        <input type="checkbox" id="switch" (click)="changeMode()"/>
         <label for="switch">Toggle</label>
     </div>
 </nav>

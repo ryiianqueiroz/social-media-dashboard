@@ -91,3 +91,32 @@ section{
         background-color: hsl(228, 28%, 14%) !important;
     }
 }
+
+@media screen and (max-width: 768px) {
+    section{
+        max-width: 90%;
+        margin: auto;
+        padding-bottom: 50px;
+
+        .section-blocos{
+            display: grid;
+            margin: auto;
+            grid-template-columns: 1fr;
+            gap: 17px;
+
+            .section-bloco{
+                position: relative;
+
+                .bloco-img{
+                    max-width: 100%;
+
+                    img{
+                        right: 0;
+                        margin-right: 20px;
+                        position: absolute;
+                    }
+                }
+            }
+        }
+    }
+}
