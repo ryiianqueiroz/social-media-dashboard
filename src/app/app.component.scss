@@ -2,6 +2,9 @@
 
 .app{
     min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
     &.app-dark-mode{
         background-color: hsl(232, 19%, 15%);

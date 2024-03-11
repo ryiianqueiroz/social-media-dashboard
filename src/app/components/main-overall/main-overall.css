@@ -18,14 +18,14 @@ main {
   background-color: rgba(214, 214, 214, 0.671);
 }
 .stats-bloco h1 {
-  font-size: 50px;
+  font-size: 3.3rem;
   margin: 0;
 }
 .stats-bloco #p-followers {
   margin-top: 5px;
   color: rgb(150, 150, 150);
   letter-spacing: 4px;
-  font-size: 13px;
+  font-size: 0.9rem;
 }
 .stats-bloco img {
   width: 20px;
@@ -38,7 +38,7 @@ main {
   margin-top: 15px;
 }
 .stats-bloco .img-link p {
-  font-size: 12px;
+  font-size: 0.6rem;
 }
 .stats-bloco .today, .stats-bloco .today-red {
   display: flex;
@@ -70,13 +70,46 @@ main {
   border-top: 3px solid red;
 }
 
+@media screen and (max-width: 1024px) {
+  main {
+    max-width: 750px;
+  }
+  main .stats-bloco {
+    height: 180px;
+  }
+  main .stats-bloco h1 {
+    font-size: 2.8rem;
+    margin-top: 10px;
+  }
+  main .stats-bloco #p-followers {
+    font-size: 0.6rem;
+  }
+  main .stats-bloco .img-link img {
+    width: 15px;
+    height: 15px;
+  }
+  main .stats-bloco .img-link p {
+    font-size: 0.6rem;
+  }
+  main .stats-bloco .today, main .stats-bloco .today-red {
+    font-size: 0.6rem;
+  }
+}
 @media screen and (max-width: 768px) {
   main {
     display: flex;
     flex-direction: column;
-    max-width: 90%;
+    max-width: 500px;
+  }
+  main .stats-bloco {
+    margin-left: 5%;
+    margin-right: 5%;
   }
 }
+.p-followers-dark {
+  color: white !important;
+}
+
 .stats-bloco-dark {
   background-color: hsl(228, 28%, 20%);
 }
